@@ -286,11 +286,11 @@ HTML_TEMPLATE = """
             <div class="contact-info">
                 <div class="contact-item">
                     <span>👑 Owner:</span>
-                    <a href="https://t.me/jobayar_ahmed" style="color: var(--accent); text-decoration: none;">@JOBAYAR_AHMED</a>
+                    <a href="https://t.me/NIROB_BBZ" style="color: var(--accent); text-decoration: none;">@NIROB_BBZ</a>
                 </div>
                 <div class="contact-item">
                     <span>📢 Channel:</span>
-                    <a href="https://t.me/GHOST_XOFC" style="color: var(--accent); text-decoration: none;">ZIBON  X</a>
+                    <a href="https://t.me/SPEED_X_OFFICIAL1" style="color: var(--accent); text-decoration: none;">NIROB X</a>
                 </div>
             </div>
             
@@ -299,7 +299,7 @@ HTML_TEMPLATE = """
     </div>
     
     <footer>
-        &copy; 2023 ZIBON  XHOSTING | All Rights Reserved
+        &copy; 2023 NIROB  XHOSTING | All Rights Reserved
     </footer>
 </body>
 </html>
@@ -310,7 +310,7 @@ def home():
     return render_template_string(HTML_TEMPLATE)
 
 def run_flask():
-    port = int(os.environ.get("PORT", 5001))
+    port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
 
 def keep_alive():
@@ -321,11 +321,11 @@ def keep_alive():
 # --- End Flask Keep Alive ---
 
 # --- Configuration ---
-TOKEN = '8950776768:AAGOZ5NrQ19_bCrZ4oEmH7K1A8oOcISfxQg' # Replace with your actual token
+TOKEN = '8285135221:AAFKR1QcCyExq2Tm-iRgkdVVCBvz3MRJgpM' # Replace with your actual token
 OWNER_ID = 7224513731 # Replace with your Owner ID
-ADMIN_ID = 8005482460 # Replace with your Admin ID (can be same as Owner)
-YOUR_USERNAME = '@jobayar_ahmed' # Replace with your Telegram username (without the @)
-UPDATE_CHANNEL = 'https://t.me/JOBAYAR_AHMED' # Replace with your update channel link
+ADMIN_ID = 7744431484 # Replace with your Admin ID (can be same as Owner)
+YOUR_USERNAME = '@NIROB_BBZ' # Replace with your Telegram username (without the @)
+UPDATE_CHANNEL = 'https://t.me/SPEED_X_OFFICIAL1' # Replace with your update channel link
 
 # Folder setup - using absolute paths
 BASE_DIR = os.path.abspath(os.path.dirname(__file__)) # Get script's directory
@@ -2472,4 +2472,3 @@ if __name__ == '__main__':
             logger.critical(f"💥 Unrecoverable polling error: {e}", exc_info=True)
             logger.info("Restarting polling in 30s due to critical error..."); time.sleep(30)
         finally: logger.warning("Polling attempt finished. Will restart if in loop."); time.sleep(1)
-
