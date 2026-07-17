@@ -310,7 +310,7 @@ def home():
     return render_template_string(HTML_TEMPLATE)
 
 def run_flask():
-    port = int(os.environ.get("PORT", 8080))
+    port = int(os.environ.get("PORT", 5001))
     app.run(host='0.0.0.0', port=port)
 
 def keep_alive():
